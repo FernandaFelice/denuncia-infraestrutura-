@@ -1,0 +1,239 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( white, rgb(234, 235, 236));
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    background-color: rgb(1, 4, 43);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-top{
+    grid-column: 2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: poppins, sans-serif;
+}
+
+.icone-de-alerta{
+    height: 45px;
+}
+
+.nav{
+    grid-column: 3;
+    justify-self: end;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: rgb(182, 199, 255);
+}
+
+.informacoes{
+    padding: 10px;
+    text-align: justify;
+    color: rgb(3, 3, 54);
+    font-size: 16px;
+    background-color: rgb(201, 209, 218);
+}
+
+.legenda{
+    margin-bottom: 20px
+}
+
+.campo-aberto{
+    margin: 30px 0
+}
+
+.fieldset{
+    margin-bottom: 25px;
+}
+
+.sobre{
+    background:linear-gradient(to right, rgb(207, 221, 233), rgb(165, 188, 209));
+    padding: 10px;
+    border-radius:80px;
+    width: 95%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 3, 54);
+    font-size: 18px;
+    padding: 10px;
+}
+
+.denuncia{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(3, 3, 54);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.fieldset{
+    border-radius: 15px;
+    border: 1px solid #cccccc7c;;
+
+}
+
+.legenda{
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+.campo-label
+{
+    font-size: 16px;
+}
+
+.campo-input{
+    width: 100%;
+    max-width: 850px;
+    padding: 15px;
+    margin: 5px 0px;
+    border: 1px solid #cccccc9d;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+select{
+    color:rgb(102, 101, 101);
+    font-size: 14px;
+}
+
+.indicacao{
+    color: rgb(32, 149, 178);
+    font-size: 16px;
+}
+
+.fieldset-checkbox{
+    border-radius: 15px;
+    border: 1px solid #cccccc7c;
+}
+
+.fieldset-checkbox > div {
+    width: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.fieldset-radio{
+    border-radius: 15px;
+    border: 1px solid #cccccc7c;
+
+}
+
+.problemas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape{
+    background-color: black;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao-confirmar{
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+    background-color: rgb(42, 165, 73);
+    border-radius: 10px;
+    border: none;
+}
+
+.botao-apagar{
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+    background-color: rgb(218, 53, 53);
+    border-radius: 10px;
+    border: none;
+}   
+
+.botoes{
+    display: flex;
+    margin: 10px;
+    gap: 30px;
+}
+
+.descricao{
+    width: 90%;
+    max-width: 850px;
+    border-radius: 10px;
+    border: 1px solid #cccccc9d;
+    padding: 15px;
+
+}
+
+.descricao::placeholder{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px){
+
+    .header{
+        grid-template-columns: 1fr;
+    }
+
+    .header-top,
+    .nav{
+        grid-column: 1;
+        justify-self: center;
+    }
+
+    .menu,
+    .botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
