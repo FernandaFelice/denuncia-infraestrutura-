@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia de Infraestrutura Urbana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="_imagens/caution.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <h1 class="titulo-principal">Faça sua denúncia aqui</h1>
+            <img class="icone-de-alerta" src="_imagens/speaker.png" alt="imagem">
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Denunciar</a></li>
+                <li><a href="index.html">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="informacoes">
+        <h2 class="sobre"> 🔵 Denuncie problemas da
+            sua cidade e acompanhe
+            a solução em tempo real</h2>
+        <P>Registre problemas urbanos de forma
+            rápida, simples e eficiente. Sua colaboração
+            é o primeiro passo para uma cidade mais
+            segura, limpa e bem cuidada.</p>
+    </section>
+
+    <main class="formulario">
+        <section class="denuncia">
+            <form>
+                <h2 class="titulo">Formulário de denúncia</h2>
+
+                <fieldset class="fieldset">
+                    <legend class="legenda">Dados do denunciante</legend>
+
+                    <label class="campo-label" for="nome">Nome</label>
+                    <input class="campo-input" id="nome" name="nome" type="text" placeholder="Digite seu nome completo" required>
+
+                    <label class="campo-label" for="email">E-mail</label>
+                    <input class="campo-input" id="email" name="email" type="email" placeholder="Digite seu email" required>
+
+                    <label class="campo-label" for="telefone">Telefone</label>
+                    <input class="campo-input" id="telefone" name="telefone" type="tel" placeholder="(DDD) 999999999" required>
+
+
+                    <label class="campo-label" for="cpf">CPF</label>
+                    <input class="campo-input" id="cpf" name="cpf" type="text" placeholder="000.000.000-00" maxlength="14" required>
+
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="legenda">Local do problema</legend>
+
+                    <label class="campo-label" for="estado">Estado</label>
+                    <select class="campo-input" name="estado" id="estado">
+                        <option value="" disabled selected>Selecione o estado</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ce">Ceará</option>
+                    </select>
+
+                    <label class="campo-label" for="cidade">Cidade</label>
+                    <select class="campo-input" name="cidade" id="cidade">
+                        <option value="" disabled selected>Selecione a Cidade</option>
+                        <option value="patos">Patos</option>
+                        <option value="malta">Malta</option>
+                        <option value="condado">Condado</option>
+                        <option value="pombal">Pombal</option>
+                    </select>
+
+                    <label class="campo-label" for="rua">Rua</label>
+                    <input class="campo-input" id="rua" name="rua" type="text" placeholder="Ex.: Luiz Bom Senhor" required>
+
+                    <label class="campo-label" for="bairro">Bairro</label>
+                    <input class="campo-input" id="bairro" name="bairro" type="text" placeholder="Ex.: Centro" required>
+
+                    <label class="campo-label" for="dataocorrencia">Data da ocorrência</label>
+                    <input class="campo-input" id="dataocorrencia" name="dataocorrencia" type="date">
+
+                </fieldset>
+
+                <section class="problemas">
+                    <fieldset class="fieldset-checkbox">
+                        <legend class="legenda">Tipo de problema</legend>
+                        <p class="indicacao">Selecione um ou mais problemas:</p>
+
+                        <div class="opcoes">
+                            <label class="campo-label" for="buraco">Buraco na rua</label>
+                            <input class="input-checkbox" id="buraco" name="buraco" type="checkbox" value="buraco">
+
+                            <label class="campo-label" for="iluminacao">Falta de iluminação</label>
+                            <input class="input-checkbox" id="iluminacao" name="iluminacao" type="checkbox" value="iluminacao">
+
+                            <label class="campo-label" for="lixo">Lixo acumulado</label>
+                            <input class="input-checkbox" id="lixo" name="lixo" type="checkbox" value="lixo">
+
+                            <label class="campo-label" for="calcada">Calçada danificada</label>
+                            <input class="input-checkbox" id="calcada" name="calcada" type="checkbox" value="calcada">
+
+                            <label class="campo-label" for="esgoto">Vazamento de esgoto</label>
+                            <input class="input-checkbox" id="esgoto" name="esgoto" type="checkbox" value="esgoto">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset-radio">
+                        <legend class="legenda">Nível de urgência</legend>
+
+                        <div class="opcoes">
+                            <label class="campo-label" for="baixa">Baixa</label>
+                            <input class="input-radio" id="baixa" name="urgencia" type="radio" value="baixa">
+
+                            <label class="campo-label" for="media">Média</label>
+                            <input class="input-radio" id="media" name="urgencia" type="radio" value="media">
+
+                            <label class="campo-label" for="alta">Alta</label>
+                            <input class="input-radio" id="alta" name="urgencia" type="radio" value="alta">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset-checkbox">
+                        <legend class="legenda">Riscos associados</legend>
+                        <div class="opcoes">
+                            <label class="campo-label" for="pedestre">Risco para pedestre</label>
+                            <input class="input-checkbox" id="pedestre" name="pedestre" type="checkbox" value="pedestre">
+
+                            <label class="campo-label" for="veiculos">Risco para veículos</label>
+                            <input class="input-checkbox" id="veiculos" name="veiculos" type="checkbox" value="veiculos">
+
+                            <label class="campo-label" for="escola">Próximo de escola</label>
+                            <input class="input-checkbox" id="escola" name="escola" type="checkbox" value="escola">
+
+                            <label class="campo-label" for="hospital">Próximo de hospital</label>
+                            <input class="input-checkbox" id="hospital" name="hospital" type="checkbox" value="hospital">
+                        </div>
+                    </fieldset>
+                </section>
+                
+                <section class="campo-aberto">
+                    <label for="descricao" class="legenda">Descrição do problema</label>
+                    <textarea class="descricao" name="descricao" id="descricao" rows="5" cols="50"
+                        placeholder="Descreva o problema "></textarea>
+                </section>
+
+                <div class="botoes">
+                    <button class="botao-confirmar" type="submit">Enviar dados</button>
+                    <button class="botao-apagar" type="reset">Limpar dados</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
